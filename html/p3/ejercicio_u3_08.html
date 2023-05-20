@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!--
+ Nombre : Felipe Montalvo Hernández
+Materia : Programación Web 1
+Fecha :
+Descripción : 
+ -->
+
+<html lang="es">
+<head>
+    <title>Unidad 03-Ejercicio 08</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Felipe Montalvo Hernández">
+    
+<style>
+    .Tit{ background-color: black; color: aqua;
+    }
+    
+</style>
+
+</head>
+
+<body> 
+    
+    <h1 class="Tit">JavaScript - Funciones & Eventos</h1>
+    <h2>JavaScript contenido enetiqueta</h2>
+    <button onclick="document.body.style.backgroundColor= 'lightgreen';" ondblclick="alert('HOLA MUNDO!!!');">Cambia fondo</button>
+    <button id="btnColor">Cambia fondo</button>
+    <button id="btnSaludar">Saluda a todos</button>
+        <script>
+            /*Modo basico*/
+            let button= document.getElementById("btnColor");
+
+            function funcolor_A(){
+                document.body.style.backgroundColor = 'lightblue';
+            }
+            function funcolor_B(){
+                document.body.style.backgroundColor = 'pink';
+            }
+            button.addEventListener('click',funcolor_A);
+            button.addEventListener('dbclick',funcolor_B);
+            /*Modo optimizado*/
+            document.getElementById("btnSaludar").addEventListener('click',() =>{
+                alert("Hola alumnos de la UPSLP...\nTengan un buen dia\n:)");
+            } );
+        </script>
+       <h2>Eventos del mouse</h2>
+        <p style="background-color: aquamarine;" onmouseover="alert('Acabas de pasar por encima del aparrado');"onmouseout="alert('Acabas de salir del parrafo');">Puedes pasar por encima del parrafo o hacer click en el</p>
+     
+
+</body>
+</html>
