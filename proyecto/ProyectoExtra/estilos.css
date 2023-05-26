@@ -61,7 +61,7 @@ section{
     background: url(uefa.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: calc(100vh - 90px);
+    height: calc(150vh - 90px);
 }
 .tit{
     color: white;
